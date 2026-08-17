@@ -14,6 +14,7 @@ def index(request):
     data = {
         'title': "Landing Page' Dashboard",
         'total_responses': total_responses,
+        'responses': posts[:10],
     }
 
     return render(request, 'dashboard/index.html', data)
